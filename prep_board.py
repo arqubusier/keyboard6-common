@@ -64,7 +64,7 @@ def orient_thumbs(l):
 
 class Keyboard6Prep(pcbnew.ActionPlugin):
     def defaults(self):
-        self.name = "Flip Board along a dimension and reference point."
+        self.name = "Prepare keyboard6 layout."
         self.category = "N/A"
         self.description = "N/A"
 
@@ -86,4 +86,4 @@ class Keyboard6Prep(pcbnew.ActionPlugin):
         
         f.close()
 
-FlipBoard().register()
+Keyboard6Prep().register()
