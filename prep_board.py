@@ -1,7 +1,10 @@
-from pcbnew import *
+import pcbnew
 from math import pi
 import re
-board = GetBoard()
+import os
+import wx
+
+board = pcbnew.GetBoard()
 
 num = r'([-0-9.]+)'
 pos_regex = r'\s*'.join([r'\[', num, r',', num, r',', num])
@@ -62,14 +65,31 @@ def orient_thumbs(l):
         module.SetOrientationDegrees(angle)
         n += 1
 
-class Keyboard6Prep(pcbnew.ActionPlugin):
-    def defaults(self):
-        self.name = "Prepare keyboard6 layout."
-        self.category = "N/A"
-        self.description = "N/A"
+class Keyboard6Gui(wx.Frame):
+    def __init__(self, parent):
+        wx.Frame.__init__(self, parent, title="Keyboard6 prep")
+        self.panel = wx.Panel(self)
 
-    def Run(self):
-        f = open("../positions.echo", "r")
+        path_label = wx.StaticText(self.panel, label="Path to positions file'")
+        self.path_text = wx.TextCtrl(self.panel, value="./positions.echo")
+        path_box = wx.BoxSizer(wx.HORIZONTAL)
+        path_box.Add(path_label, proportion=1)
+        path_box.Add(self.path_text, proportion=3, flag=wx.EXPAND)
+
+        button = wx.Button(self.panel, label="Run")
+
+        box = wx.BoxSizer(wx.VERTICAL)
+        box.Add(path_box, proportion=0)
+        box.Add(button, proportion=0)
+
+        self.panel.SetSizer(box)
+        self.Bind(wx.EVT_BUTTON, self.Run, id=button.GetId())
+
+    def Run(self, event):
+        print(os.getcwd())
+        path = self.path_text.GetLineText(0)
+        print("positions: {}".format(path))
+        f = open(path, "r")
         for l in  f:
             type = l.split(',')[0]
             print(l)
@@ -85,5 +105,17 @@ class Keyboard6Prep(pcbnew.ActionPlugin):
                 place_thumbs(l)
         
         f.close()
+        pcbnew.Refresh()
+
+class Keyboard6Prep(ActionPlugin):
+    def defaults(self):
+        self.name = "Prepare keyboard6 layout."
+        self.category = "N/A"
+        self.description = "N/A"
+
+    def Run(self):
+        gui = Keyboard6Gui(None)
+        gui.Show(True)
+        return gui
 
 Keyboard6Prep().register()
