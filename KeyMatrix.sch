@@ -129,6 +129,8 @@ F 0 "SW1" V 8944 5190 50  0000 L CNN
 F 1 "SW_DIP_x01" V 9035 5190 50  0000 L CNN
 F 2 "keyboard6:SW_Cherry_MX_1.00u_PCB_centered" H 8990 5060 50  0001 C CNN
 F 3 "~" H 8990 5060 50  0001 C CNN
+F 4 " MX1A-G1NN" V 8990 5060 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 540-MX1A-G1NN" V 8990 5060 50  0001 C CNN "Mouser Part Number"
 	1    8990 5060
 	0    -1   -1   0   
 $EndComp
@@ -343,6 +345,8 @@ F 0 "D6" H 7490 4925 50  0000 C CNN
 F 1 "DIODE" H 7490 4834 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7490 4660 50  0001 C CNN
 F 3 "~" H 7490 4660 50  0001 C CNN
+F 4 "1N4148WX-TP" H 7490 4660 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 833-1N4148WX-TP" H 7490 4660 50  0001 C CNN "Mouser Part Number"
 	1    7490 4660
 	-1   0    0    -1  
 $EndComp

@@ -21,6 +21,8 @@ F 0 "J2" H 2917 5007 50  0000 C CNN
 F 1 "USB_B_Micro" H 2917 4916 50  0000 C CNN
 F 2 "keyboard6:USB_mini_b_TE_ 1734035-2" H 3010 4490 50  0001 C CNN
 F 3 "~" H 3010 4490 50  0001 C CNN
+F 4 "1734035-2" H 2860 4540 50  0001 C CNN "Manufacturer Part Number"
+F 5 "571-1734035-2" H 2860 4540 50  0001 C CNN "Mouser Part Number"
 	1    2860 4540
 	1    0    0    -1  
 $EndComp
@@ -54,6 +56,8 @@ F 0 "C4" H 1575 3816 50  0000 L CNN
 F 1 "10u" H 1575 3725 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1498 3620 50  0001 C CNN
 F 3 "~" H 1460 3770 50  0001 C CNN
+F 4 "JMF212AB7106KGHT" H 1460 3770 50  0001 C CNN "Manufacturer Part Number"
+F 5 "963-JMF212AB7106KGHT " H 1460 3770 50  0001 C CNN "Mouser Part Number"
 	1    1460 3770
 	1    0    0    -1  
 $EndComp
@@ -65,6 +69,8 @@ F 0 "R1" H 4940 2726 50  0000 L CNN
 F 1 "4.7k" H 4940 2635 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4800 2680 50  0001 C CNN
 F 3 "~" H 4870 2680 50  0001 C CNN
+F 4 "CRCW08054K70JNEA" H 4870 2680 50  0001 C CNN "Manufacturer Part Number"
+F 5 "71-CRCW0805J-4.7K-E3 " H 4870 2680 50  0001 C CNN "Mouser Part Number"
 	1    4870 2680
 	1    0    0    -1  
 $EndComp
@@ -87,6 +93,8 @@ F 0 "R2" V 3673 4540 50  0000 C CNN
 F 1 "22" V 3764 4540 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3810 4540 50  0001 C CNN
 F 3 "~" H 3880 4540 50  0001 C CNN
+F 4 "CR0805-FX-22R0ELF" V 3880 4540 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 652-CR0805FX-22R0ELF" V 3880 4540 50  0001 C CNN "Mouser Part Number"
 	1    3880 4540
 	0    1    1    0   
 $EndComp
@@ -129,6 +137,8 @@ F 0 "F1" H 3220 3896 50  0000 L CNN
 F 1 "500m" H 3220 3805 50  0000 L CNN
 F 2 "Fuse:Fuse_0603_1608Metric" V 3090 3850 50  0001 C CNN
 F 3 "~" H 3160 3850 50  0001 C CNN
+F 4 " TR-0603HV500-R" H 3160 3850 50  0001 C CNN "Manufacturer Part Number"
+F 5 "504-TR-0603HV500-R" H 3160 3850 50  0001 C CNN "Mouser Part Number"
 	1    3160 3850
 	1    0    0    -1  
 $EndComp
@@ -148,17 +158,6 @@ Wire Wire Line
 Wire Wire Line
 	1790 3530 1790 3610
 Connection ~ 2190 3530
-$Comp
-L Device:C C2
-U 1 1 60686208
-P 1790 3760
-F 0 "C2" H 1905 3806 50  0000 L CNN
-F 1 "1u" H 1905 3715 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1828 3610 50  0001 C CNN
-F 3 "~" H 1790 3760 50  0001 C CNN
-	1    1790 3760
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1790 3530 1460 3530
 Wire Wire Line
@@ -203,6 +202,8 @@ F 0 "C1" V 3830 3160 50  0000 C CNN
 F 1 "32p" V 3830 3310 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4028 3080 50  0001 C CNN
 F 3 "~" H 3990 3230 50  0001 C CNN
+F 4 "GQM2195C2E320JB12D" V 3990 3230 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 81-GQM2195C2E320JB2D" V 3990 3230 50  0001 C CNN "Mouser Part Number"
 	1    3990 3230
 	0    1    1    0   
 $EndComp
@@ -225,6 +226,8 @@ F 0 "Y1" V 4424 3418 50  0000 L CNN
 F 1 "16MHz" V 4515 3418 50  0000 L CNN
 F 2 "keyboard6:Crystal_CSM-7X_SMD" H 4470 3330 50  0001 C CNN
 F 3 "~" H 4470 3330 50  0001 C CNN
+F 4 "ECS-160-20-5PX-TR" V 4470 3330 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 520-CSM1600-20-X" V 4470 3330 50  0001 C CNN "Mouser Part Number"
 	1    4470 3330
 	0    1    1    0   
 $EndComp
@@ -262,7 +265,7 @@ Wire Wire Line
 Text GLabel 6740 5130 2    50   Input ~ 0
 GND1
 Text Notes 6770 5050 0    50   ~ 0
-HWB tied to ground means that the\nbootloader will be executed \n(assuming correct WHBE fuse value)
+HWB tied to ground means that the\nbootloader will be executed during reset\nif this pin reads logical zero\n(assuming WHBE fuse value is 0)
 $Comp
 L Switch:SW_Push_Dual SW30
 U 1 1 6068AC98
@@ -271,6 +274,8 @@ F 0 "SW30" H 4530 3115 50  0000 C CNN
 F 1 "SW_Push_Dual" H 4530 3024 50  0000 C CNN
 F 2 "keyboard6:SW_E_SW_TL_3303" H 4530 3030 50  0001 C CNN
 F 3 "~" H 4530 3030 50  0001 C CNN
+F 4 "TL3303F160QG" H 4530 2830 50  0001 C CNN "Manufacturer Part Number"
+F 5 "612-TL3303F160QG" H 4530 2830 50  0001 C CNN "Mouser Part Number"
 	1    4530 2830
 	1    0    0    -1  
 $EndComp
@@ -286,6 +291,8 @@ F 0 "J1" V 7111 2850 50  0000 R CNN
 F 1 "AudioJack4" V 7202 2850 50  0000 R CNN
 F 2 "keyboard6:TRRS_smd_SparkFun_PRT-12639" H 7200 3180 50  0001 C CNN
 F 3 "~" H 7200 3180 50  0001 C CNN
+F 4 "PRT-12639" V 7200 3180 50  0001 C CNN "Manufacturer Part Number"
+F 5 "474-PRT-12639" V 7200 3180 50  0001 C CNN "Mouser Part Number"
 	1    7200 3180
 	0    -1   1    0   
 $EndComp
@@ -507,6 +514,8 @@ F 0 "C10" H 5325 2156 50  0000 L CNN
 F 1 "0.1u" H 5325 2065 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5248 1960 50  0001 C CNN
 F 3 "~" H 5210 2110 50  0001 C CNN
+F 4 " 08053C104KAT2A" H 5210 2110 50  0001 C CNN "Manufacturer Part Number"
+F 5 " 581-08053C104K" H 5210 2110 50  0001 C CNN "Mouser Part Number"
 	1    5210 2110
 	1    0    0    -1  
 $EndComp
@@ -542,4 +551,17 @@ Wire Wire Line
 Connection ~ 2190 5230
 Text Notes 2790 2820 0    50   ~ 0
 Each crystal capacitor value was \ndetermined by the formula\nC = 2*CL – 2*Cstray\nCL is the crystal's load capacitance\nCstray is the parasitic capacitance\nthus,\nC = 2*20 - 2*4 = 32 [pF]
+$Comp
+L Device:C C2
+U 1 1 60686208
+P 1790 3760
+F 0 "C2" H 1905 3806 50  0000 L CNN
+F 1 "1u" H 1905 3715 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1828 3610 50  0001 C CNN
+F 3 "~" H 1790 3760 50  0001 C CNN
+F 4 "CL21B105KOFNNNE" H 1790 3760 50  0001 C CNN "Manufacturer Part Number"
+F 5 "187-CL21B105KOFNNNE" H 1790 3760 50  0001 C CNN "Mouser Part Number"
+	1    1790 3760
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
